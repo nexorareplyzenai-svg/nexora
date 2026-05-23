@@ -1,65 +1,49 @@
-def welcome():
+from sections import welcome
+from sections import help_section
+from sections import about_section
 
-    name = input("What is your name? ")
 
-    while True:
+def show_menu():
 
-        age = input("How old are you? ")
+    print("\n=== NEXORA MENU ===")
+    print("1 - Start")
+    print("2 - Help")
+    print("3 - About")
+    print("4 - Exit")
 
-        if age.isdigit():
-            age = int(age)
-            break
 
-        else:
-            print("Please enter a number")
+def handle_choice(choice):
 
-    print("Welcome to Nexora,", name)
+    if choice == "1":
+        welcome()
 
-    if age < 18:
-        print("You are young")
+    elif choice == "2":
+        help_section()
 
-    elif age < 60:
-        print("You are adult")
+    elif choice == "3":
+        about_section()
+
+    elif choice == "4":
+        print("Goodbye")
+        return False
 
     else:
-        print("You are old")
+        print("Invalid choice")
+
+    return True
 
 
-def help_section():
-    print("This is the help section")
+def main():
 
+    running = True
 
-def about_section():
-    print("Nexora Version 1.0")
+    while running:
 
-
-def menu():
-
-    while True:
-
-        print("\n=== NEXORA MENU ===")
-        print("1 - Start")
-        print("2 - Help")
-        print("3 - About")
-        print("4 - Exit")
+        show_menu()
 
         choice = input("Choose: ")
 
-        if choice == "1":
-            welcome()
-
-        elif choice == "2":
-            help_section()
-
-        elif choice == "3":
-            about_section()
-
-        elif choice == "4":
-            print("Goodbye")
-            break
-
-        else:
-            print("Invalid choice")
+        running = handle_choice(choice)
 
 
-menu()
+main()
