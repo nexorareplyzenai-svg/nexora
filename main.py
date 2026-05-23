@@ -1,4 +1,4 @@
-def welcome():
+def start():
 
     name = input("What is your name? ")
 
@@ -24,4 +24,19 @@ def welcome():
 
 
 while True:
-    welcome()
+
+    print("\n=== NEXORA MENU ===")
+    print("1 - Start")
+    print("2 - Exit")
+
+    choice = input("Choose: ")
+
+    if choice == "1":
+        start()
+
+    elif choice == "2":
+        print("Goodbye")
+        break
+
+    else:
+        print("Invalid choice")
