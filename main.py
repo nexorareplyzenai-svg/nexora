@@ -6,6 +6,5 @@ print("Welcome to Nexora,", name)
 
 if age < 18:
     print("You are young")
-
-if age >= 18:
+else:
     print("You are adult")
