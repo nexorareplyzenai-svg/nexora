@@ -1,13 +1,20 @@
+def get_age():
+
+    while True:
+
+        try:
+            age = int(input("How old are you? "))
+            return age
+
+        except:
+            print("Please enter a number")
+
+
 def welcome():
 
     name = input("What is your name? ")
 
-    try:
-        age = int(input("How old are you? "))
-
-    except:
-        print("Please enter a number")
-        return
+    age = get_age()
 
     print("Welcome to Nexora,", name)
 
