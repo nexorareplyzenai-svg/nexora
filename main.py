@@ -1,14 +1,19 @@
-name = input("What is your name? ")
+def welcome():
 
-age = int(input("How old are you? "))
+    name = input("What is your name? ")
 
-print("Welcome to Nexora,", name)
+    age = int(input("How old are you? "))
 
-if age < 18:
-    print("You are young")
+    print("Welcome to Nexora,", name)
 
-elif age < 60:
-    print("You are adult")
+    if age < 18:
+        print("You are young")
 
-else:
-    print("You are old")
+    elif age < 60:
+        print("You are adult")
+
+    else:
+        print("You are old")
+
+
+welcome()
