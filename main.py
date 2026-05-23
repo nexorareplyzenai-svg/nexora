@@ -23,11 +23,23 @@ def start():
         print("You are old")
 
 
+def help_menu():
+
+    print("This is the help section")
+
+
+def about():
+
+    print("Nexora Version 1.0")
+
+
 while True:
 
     print("\n=== NEXORA MENU ===")
     print("1 - Start")
-    print("2 - Exit")
+    print("2 - Help")
+    print("3 - About")
+    print("4 - Exit")
 
     choice = input("Choose: ")
 
@@ -35,6 +47,12 @@ while True:
         start()
 
     elif choice == "2":
+        help_menu()
+
+    elif choice == "3":
+        about()
+
+    elif choice == "4":
         print("Goodbye")
         break
 
