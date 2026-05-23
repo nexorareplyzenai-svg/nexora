@@ -2,7 +2,12 @@ def welcome():
 
     name = input("What is your name? ")
 
-    age = int(input("How old are you? "))
+    try:
+        age = int(input("How old are you? "))
+
+    except:
+        print("Please enter a number")
+        return
 
     print("Welcome to Nexora,", name)
 
