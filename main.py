@@ -1,14 +1,16 @@
-def start():
+def welcome():
 
     name = input("What is your name? ")
 
     while True:
 
-        try:
-            age = int(input("How old are you? "))
+        age = input("How old are you? ")
+
+        if age.isdigit():
+            age = int(age)
             break
 
-        except:
+        else:
             print("Please enter a number")
 
     print("Welcome to Nexora,", name)
@@ -23,38 +25,41 @@ def start():
         print("You are old")
 
 
-def help_menu():
-
+def help_section():
     print("This is the help section")
 
 
-def about():
-
+def about_section():
     print("Nexora Version 1.0")
 
 
-while True:
+def menu():
 
-    print("\n=== NEXORA MENU ===")
-    print("1 - Start")
-    print("2 - Help")
-    print("3 - About")
-    print("4 - Exit")
+    while True:
 
-    choice = input("Choose: ")
+        print("\n=== NEXORA MENU ===")
+        print("1 - Start")
+        print("2 - Help")
+        print("3 - About")
+        print("4 - Exit")
 
-    if choice == "1":
-        start()
+        choice = input("Choose: ")
 
-    elif choice == "2":
-        help_menu()
+        if choice == "1":
+            welcome()
 
-    elif choice == "3":
-        about()
+        elif choice == "2":
+            help_section()
 
-    elif choice == "4":
-        print("Goodbye")
-        break
+        elif choice == "3":
+            about_section()
 
-    else:
-        print("Invalid choice")
+        elif choice == "4":
+            print("Goodbye")
+            break
+
+        else:
+            print("Invalid choice")
+
+
+menu()
