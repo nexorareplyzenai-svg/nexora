@@ -1,6 +1,11 @@
 name = input("What is your name? ")
 
-age = input("How old are you? ")
+age = int(input("How old are you? "))
 
 print("Welcome to Nexora,", name)
-print("You are", age, "years old")
+
+if age < 18:
+    print("You are young")
+
+if age >= 18:
+    print("You are adult")
