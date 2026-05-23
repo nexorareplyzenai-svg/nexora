@@ -26,8 +26,15 @@ def welcome():
 
 
 def help_section():
+
     print("This is the help section")
 
 
 def about_section():
+
     print("Nexora Version 1.0")
+
+
+def show_message(message):
+
+    print(message)
