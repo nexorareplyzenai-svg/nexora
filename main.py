@@ -1,6 +1,7 @@
 from sections import welcome
 from sections import help_section
 from sections import about_section
+from sections import show_message
 
 
 def show_menu():
@@ -29,6 +30,8 @@ def handle_choice(choice):
 
     else:
         print("Invalid choice")
+
+    show_message("Menu loaded successfully")
 
     return True
 
