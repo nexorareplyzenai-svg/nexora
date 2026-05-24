@@ -4,6 +4,7 @@ from sections import about_section
 from sections import show_message
 from sections import separator
 from sections import loading
+from sections import goodbye
 
 
 def show_menu():
@@ -29,7 +30,7 @@ def handle_choice(choice):
         about_section()
 
     elif choice == "4":
-        print("Goodbye")
+        goodbye()
         return False
 
     else:

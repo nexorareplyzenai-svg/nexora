@@ -48,3 +48,8 @@ def separator():
 def loading():
 
     print("Loading Nexora...")
+
+
+def goodbye():
+
+    print("Thank you for using Nexora")
