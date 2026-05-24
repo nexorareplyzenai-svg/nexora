@@ -1,4 +1,49 @@
+def separator():
+
+    print("\n" + "=" * 30 + "\n")
+
+
+def title(text):
+
+    separator()
+
+    print(text)
+
+    separator()
+
+
+def show_message(message):
+
+    print(message)
+
+
+def loading():
+
+    print("Loading Nexora...")
+
+
+def goodbye():
+
+    print("Thank you for using Nexora")
+
+
+def help_section():
+
+    title("HELP SECTION")
+
+    print("This is the help section")
+
+
+def about_section():
+
+    title("ABOUT NEXORA")
+
+    print("Nexora Version 1.0")
+
+
 def welcome():
+
+    title("WELCOME TO NEXORA")
 
     name = input("What is your name? ")
 
@@ -13,6 +58,8 @@ def welcome():
         else:
             print("Please enter a number")
 
+    separator()
+
     print("Welcome to Nexora,", name)
 
     if age < 18:
@@ -24,32 +71,4 @@ def welcome():
     else:
         print("You are old")
 
-
-def help_section():
-
-    print("This is the help section")
-
-
-def about_section():
-
-    print("Nexora Version 1.0")
-
-
-def show_message(message):
-
-    print(message)
-
-
-def separator():
-
-    print("\n" + "=" * 30 + "\n")
-
-
-def loading():
-
-    print("Loading Nexora...")
-
-
-def goodbye():
-
-    print("Thank you for using Nexora")
+    separator()
