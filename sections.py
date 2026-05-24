@@ -43,3 +43,8 @@ def show_message(message):
 def separator():
 
     print("\n" + "=" * 30 + "\n")
+
+
+def loading():
+
+    print("Loading Nexora...")

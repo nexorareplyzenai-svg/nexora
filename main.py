@@ -33,6 +33,7 @@ def handle_choice(choice):
         print("Invalid choice")
 
     show_message("Menu loaded successfully")
+    separator()
 
     return True
 
