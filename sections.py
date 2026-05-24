@@ -1,15 +1,60 @@
 def separator():
+    print("=" * 35)
 
-    print("\n" + "=" * 35 + "\n")
+
+def help_section():
+    separator()
+
+    print("HELP SECTION")
+
+    separator()
+
+    print("1 - Start the program")
+    print("2 - Open help")
+    print("3 - About Nexora")
+    print("4 - Settings")
+    print("5 - Exit")
+
+    separator()
+
+
+def about_section():
+    separator()
+
+    print("ABOUT NEXORA")
+
+    separator()
+
+    print("Nexora Version 1.0")
+    print("Built with Python")
+    print("Console Application Project")
+
+    separator()
+
+
+def settings_section():
+    separator()
+
+    print("SETTINGS SECTION")
+
+    separator()
+
+    print("Theme: Default")
+    print("Language: English")
+    print("Mode: Console")
+
+    separator()
 
 
 def loading():
+    separator()
 
     print("Loading Nexora...")
 
+    separator()
+
 
 def welcome():
-
     separator()
 
     print("WELCOME TO NEXORA")
@@ -18,47 +63,16 @@ def welcome():
 
     name = input("What is your name? ")
 
-    while True:
-
-        age = input("How old are you? ")
-
-        if age.isdigit():
-
-            age = int(age)
-
-            break
-
-        else:
-
-            print("Please enter a number")
+    age = input("How old are you? ")
 
     separator()
 
-    print("Welcome to Nexora,", name)
+    print(f"Welcome to Nexora, {name}")
+
+    if int(age) < 18:
+        print("You are young")
+
+    else:
+        print("You are old")
 
     separator()
-
-
-def help_section():
-
-    print("HELP SECTION")
-
-
-def about_section():
-
-    print("ABOUT NEXORA")
-
-
-def settings_section():
-
-    print("SETTINGS")
-
-
-def goodbye():
-
-    print("Thank you for using Nexora")
-
-
-def show_message(message):
-
-    print(message)
