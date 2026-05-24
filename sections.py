@@ -38,3 +38,8 @@ def about_section():
 def show_message(message):
 
     print(message)
+
+
+def separator():
+
+    print("\n" + "=" * 30 + "\n")

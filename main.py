@@ -2,6 +2,7 @@ from sections import welcome
 from sections import help_section
 from sections import about_section
 from sections import show_message
+from sections import separator
 
 
 def show_menu():
@@ -45,6 +46,8 @@ def main():
         show_menu()
 
         choice = input("Choose: ")
+
+        separator()
 
         running = handle_choice(choice)
 
