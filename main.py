@@ -3,6 +3,7 @@ from sections import help_section
 from sections import about_section
 from sections import show_message
 from sections import separator
+from sections import loading
 
 
 def show_menu():
@@ -15,6 +16,8 @@ def show_menu():
 
 
 def handle_choice(choice):
+
+    loading()
 
     if choice == "1":
         welcome()
@@ -33,7 +36,6 @@ def handle_choice(choice):
         print("Invalid choice")
 
     show_message("Menu loaded successfully")
-    separator()
 
     return True
 
